@@ -110,3 +110,10 @@ let index = details.findIndex(contact=>contact.firstName == 'David');
 details[index].lastName = 'Lopez';
 console.log("Edited Address Book Successfully: ");
 Display();
+
+//Delete contact
+
+details.splice(index, 1);
+console.log("*********************************")
+console.log("AddressBook after Contact deleted");
+Display();

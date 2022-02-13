@@ -102,6 +102,11 @@ catch(e)
 }
 Display();
 
+
 function Display(){
     details.forEach((contact) => console.log(contact.toString()));
 }
+let index = details.findIndex(contact=>contact.firstName == 'David');
+details[index].lastName = 'Lopez';
+console.log("Edited Address Book Successfully: ");
+Display();

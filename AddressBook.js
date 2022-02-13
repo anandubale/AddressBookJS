@@ -179,3 +179,14 @@ console.log(details.filter(contact => contact.state == "Utah")
 
 	
 console.log(details.sort((a, b) => a.lastName.localeCompare(b.lastName))); 
+
+
+//Sorting entriess:
+
+
+console.log("Contact After Sorting City:-");
+console.log(details.sort((a, b) => a.city.localeCompare(b.city)))
+console.log("Contact After sorting State:-");
+console.log(details.sort((a, b) => a.state.localeCompare(b.state)));
+console.log("Contact After sorting zip:-");
+console.log(details.sort((a, b) => a.zipCode.localeCompare(b.zipCode)));
